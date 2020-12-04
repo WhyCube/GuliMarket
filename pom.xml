@@ -8,6 +8,19 @@
     <name>mail</name>
     <description>聚合服务</description>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
     <packaging>pom</packaging>
 
     <modules>
@@ -16,7 +29,9 @@
         <module>mail-member</module>
         <module>mail-order</module>
         <module>mail-coupon</module>
-
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>mail-common</module>
     </modules>
 
 </project>
