@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.233.10/mail_sms
+    driver-class-name: com.mysql.jdbc.Driver
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.233.10:8848
+  application:
+    name: coupon
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+
+  #设置主键生成规则为自增
+  global-config:
+    db-config:
+      id-type: auto
+
