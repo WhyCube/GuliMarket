@@ -30,8 +30,10 @@
         <module>mail-order</module>
         <module>mail-coupon</module>
         <module>renren-fast</module>
-        <module>renren-generator</module>
+        <!-- <module>renren-generator</module> -->
+
         <module>mail-common</module>
+        <module>gateway</module>
     </modules>
 
 </project>

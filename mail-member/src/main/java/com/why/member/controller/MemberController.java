@@ -3,6 +3,7 @@ package com.why.member.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import com.why.member.feign.CouponFeignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,7 +30,14 @@ import com.why.common.utils.R;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+    @Autowired
+    CouponFeignService couponFeignService;
 
+    @RequestMapping("/memberTest")
+    public R test(){
+        R r=couponFeignService.test();
+        return r.put("会员服务","调用成功");
+    }
     /**
      * 列表
      */

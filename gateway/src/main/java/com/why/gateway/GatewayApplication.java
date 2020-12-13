@@ -1,17 +1,16 @@
-package com.why.member;
+package com.why.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = "com.why.member.feign")
-@SpringBootApplication
-public class MailMemberApplication {
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+public class GatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MailMemberApplication.class, args);
+        SpringApplication.run(GatewayApplication.class, args);
     }
 
 }
