@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.why.GuliMarket</groupId>
-    <artifactId>mail</artifactId>
+    <artifactId>mall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mail</name>
+    <name>mall</name>
     <description>聚合服务</description>
 
     <build>
@@ -24,16 +24,17 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>mail-product</module>
-        <module>mail-ware</module>
-        <module>mail-member</module>
-        <module>mail-order</module>
-        <module>mail-coupon</module>
+        <module>mall-product</module>
+        <module>mall-ware</module>
+        <module>mall-member</module>
+        <module>mall-order</module>
+        <module>mall-coupon</module>
         <module>renren-fast</module>
         <!-- <module>renren-generator</module> -->
 
-        <module>mail-common</module>
-        <module>gateway</module>
+        <module>mall-common</module>
+        <module>mall-gateway</module>
+        <module>mall-search</module>
     </modules>
 
 </project>
